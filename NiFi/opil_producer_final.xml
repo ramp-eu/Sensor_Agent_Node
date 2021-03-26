@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description></description>
+    <groupId>80659cca-6199-300f-c4e7-c46a3c76bb50</groupId>
+    <name>opil_producer_final</name>
+    <snippet>
+        <controllerServices>
+            <id>f20c667a-0317-3bf2-0000-000000000000</id>
+            <parentGroupId>4599b881-dbbc-3a46-0000-000000000000</parentGroupId>
+            <bundle>
+                <artifact>nifi-http-context-map-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.10.0</version>
+            </bundle>
+            <comments></comments>
+            <descriptors>
+                <entry>
+                    <key>Maximum Outstanding Requests</key>
+                    <value>
+                        <name>Maximum Outstanding Requests</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Request Expiration</key>
+                    <value>
+                        <name>Request Expiration</name>
+                    </value>
+                </entry>
+            </descriptors>
+            <name>StandardHttpContextMap</name>
+            <persistsState>false</persistsState>
+            <properties>
+                <entry>
+                    <key>Maximum Outstanding Requests</key>
+                    <value>5000</value>
+                </entry>
+                <entry>
+                    <key>Request Expiration</key>
+                    <value>1 min</value>
+                </entry>
+            </properties>
+            <state>ENABLED</state>
+            <type>org.apache.nifi.http.StandardHttpContextMap</type>
+        </controllerServices>
+        <processGroups>
+            <id>9b1dac32-3aa0-3c3b-0000-000000000000</id>
+            <parentGroupId>4599b881-dbbc-3a46-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <comments></comments>
+            <contents>
+                <connections>
+                    <id>1cb267de-1b13-3898-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>986198a1-8d14-3f36-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>cdfebd3a-f941-3c32-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>617e166c-69fd-3d6c-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>2c4fc74c-f752-3889-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>EsthesisDeviceCommand</selectedRelationships>
+                    <source>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>3e29b382-5b9d-3809-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>71c4a6b2-f047-3485-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>3e29b382-5b9d-3809-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>986198a1-8d14-3f36-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>820df5e3-4b13-317b-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>22116ae9-fe16-3f1e-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>2c4fc74c-f752-3889-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>a103370d-7a1d-388c-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>22116ae9-fe16-3f1e-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>939779f8-c652-319d-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>bfd03510-0803-33d5-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>09dab32e-da2a-3d78-0000-000000000000</id>
+                        <type>OUTPUT_PORT</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>22116ae9-fe16-3f1e-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>d8783caa-eef0-34a3-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>939779f8-c652-319d-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>command</selectedRelationships>
+                    <source>
+                        <groupId>9b1dac32-3aa0-3c3b-0000-000000000000</groupId>
+                        <id>3e29b382-5b9d-3809-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <outputPorts>
+                    <id>09dab32e-da2a-3d78-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>720.0</x>
+                        <y>768.0</y>
+                    </position>
+                    <comments></comments>
+                    <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                    <name>Extract Parameters</name>
+                    <state>RUNNING</state>
+                    <type>OUTPUT_PORT</type>
+                </outputPorts>
+                <processors>
+                    <id>22116ae9-fe16-3f1e-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>664.0</x>
+                        <y>528.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-update-attribute-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Delete Attributes Expression</key>
+<value>
+    <name>Delete Attributes Expression</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>
+    <name>Store State</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+<value>
+    <name>Stateful Variables Initial Value</name>
+</value>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>
+    <name>canonical-value-lookup-cache-size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.fields</key>
+<value>
+    <name>esthesis.param.fields</name>
+</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.from</key>
+<value>
+    <name>esthesis.param.from</name>
+</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.measurement</key>
+<value>
+    <name>esthesis.param.measurement</name>
+</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.order</key>
+<value>
+    <name>esthesis.param.order</name>
+</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.page</key>
+<value>
+    <name>esthesis.param.page</name>
+</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.pageSize</key>
+<value>
+    <name>esthesis.param.pageSize</name>
+</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.to</key>
+<value>
+    <name>esthesis.param.to</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Delete Attributes Expression</key>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>Do not store state</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>100</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.fields</key>
+<value>${http.query.param.fields}</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.from</key>
+<value>${http.query.param.from}</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.measurement</key>
+<value>${http.query.param.measurement}</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.order</key>
+<value>${http.query.param.order}</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.page</key>
+<value>${http.query.param.offset}</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.pageSize</key>
+<value>${http.query.param.pageSize}</value>
+                            </entry>
+                            <entry>
+<key>esthesis.param.to</key>
+<value>${http.query.param.to}</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>100 ms</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Extract parameters</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+                </processors>
+                <processors>
+                    <id>2c4fc74c-f752-3889-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1024.0</x>
+                        <y>320.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-scripting-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Script Engine</key>
+<value>
+    <name>Script Engine</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+<value>
+    <name>Script File</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>
+    <name>Script Body</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+<value>
+    <name>Module Directory</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Script Engine</key>
+<value>ECMAScript</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>/**
+NiFi script to convert incoming commands data in NiFi format.
+
+Incoming records format:
+{
+  "subscriptionId": "6001dd5e5db6c09ff099b8d8",
+  "data": [
+    {
+      "id": "device1_cmd",
+      "type": "command",
+      "args": {
+        "type": "string",
+        "value": "ls",
+        "metadata": {}
+      },
+      "createdBy": {
+        "type": "string",
+        "value": "Opil",
+        "metadata": {}
+      },
+      "operation": {
+        "type": "string",
+        "value": "EXECUTE",
+        "metadata": {}
+      }
+    }
+  ]
+}
+
+
+{
+  "subscriptionId": "60491b496b7bceef42019224",
+  "data": [
+    {
+      "id": "testdev1_cmd",
+      "type": "EsthesisDeviceCommand",
+      "measurementType": {
+        "type": "string",
+        "value": "string",
+        "metadata": {}
+      },
+      "modifiedTime": {
+        "type": "string",
+        "value": "2021-03-10T19:02:55.650Z",
+        "metadata": {}
+      },
+      "readings": {
+        "type": "array",
+        "value": [
+          {
+            "type": "SensorReading",
+            "value": {
+              "reading": {
+                "type": "string",
+                "value": "/home/pi/esthesis/led_off.sh"
+              }
+            }
+          }
+        ],
+        "metadata": {}
+      },
+      "sanID": {
+        "type": "string",
+        "value": "Esthesis_SAN_testdev1",
+        "metadata": {}
+      },
+      "sensorID": {
+        "type": "string",
+        "value": "health",
+        "metadata": {}
+      },
+      "sensorManufacturer": {
+        "type": "string",
+        "value": "Esthesis",
+        "metadata": {}
+      },
+      "sensorType": {
+        "type": "string",
+        "value": "DeviceCommand",
+        "metadata": {}
+      },
+      "units": {
+        "type": "string",
+        "value": "string",
+        "metadata": {}
+      }
+    }
+  ]
+}
+
+Outgoing records format:
+
+{"createdBy":"bc171cc3-74c6-4ab4-9912-b8b35b35c303","args":"ls"}
+
+**/
+// Get references the the output stream to write results, the input stream to read the content of
+// the FlowFile, and to the incoming FlowFile.
+var InputStreamCallback = Java.type("org.apache.nifi.processor.io.InputStreamCallback");
+var OutputStreamCallback = Java.type("org.apache.nifi.processor.io.OutputStreamCallback");
+var IOUtils = Java.type("org.apache.commons.io.IOUtils");
+var StandardCharsets = Java.type("java.nio.charset.StandardCharsets");
+var flowFile = session.get();
+
+// If no FlowFile exists return, otherwise proceed with processing.
+if (flowFile != null) {
+var dataPoints = [];
+var attrs = [];
+// Read incoming FlowFile and convert data to records.
+session.read(flowFile, new InputStreamCallback(function (inputStream) {
+// Parse incoming FlowFile content to JSON.
+var text = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+var json = JSON.parse(text);                    
+var jsonEntry = json;
+var value1 = jsonEntry.data[0].readings.value[0].value.reading.value
+// Create a variable of output format
+var dataPoint = {"createdBy":"bc171cc3-74c6-4ab4-9912-b8b35b35c303","args":"ls"}
+
+// Put generic entity output (by SAN)
+//dataPoint.createdBy = jsonEntry.data[0].createdBy.value;
+dataPoint.createdBy = "Opil";
+dataPoint.args = value1.substring(value1.lastIndexOf("/")+1);
+					  
+// Push record.
+dataPoints.push(dataPoint);
+attrs = [jsonEntry.data[0].id, jsonEntry.data[0].type.slice(-7).toLowerCase(), "EXECUTE"];
+                      
+}));
+flowFile = session.putAttribute(flowFile, 'esthesis.hardwareId', attrs[0].slice(0, -4))
+flowFile = session.putAttribute(flowFile, 'esthesis.operation', attrs[2])
+flowFile = session.putAttribute(flowFile, 'esthesis.type', attrs[1])
+// Replace FlowFile's content with the data in Orion line protocol.
+flowFile = session.write(flowFile, new OutputStreamCallback(function (outputStream) {
+outputStream.write(JSON.stringify(dataPoints[0]).getBytes(StandardCharsets.UTF_8));
+}));
+session.transfer(flowFile, REL_SUCCESS);
+}                    </value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>ExecuteScript_v2</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.script.ExecuteScript</type>
+                </processors>
+                <processors>
+                    <id>3e29b382-5b9d-3809-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>680.0</x>
+                        <y>120.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Routing Strategy</key>
+<value>
+    <name>Routing Strategy</name>
+</value>
+                            </entry>
+                            <entry>
+<key>command</key>
+<value>
+    <name>command</name>
+</value>
+                            </entry>
+                            <entry>
+<key>EsthesisDeviceCommand</key>
+<value>
+    <name>EsthesisDeviceCommand</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Routing Strategy</key>
+<value>Route to Property name</value>
+                            </entry>
+                            <entry>
+<key>command</key>
+<value>${route.value:equals('command')}</value>
+                            </entry>
+                            <entry>
+<key>EsthesisDeviceCommand</key>
+<value>${route.value:equals('EsthesisDeviceCommand')}</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>RouteOnAttribute</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>command</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>EsthesisDeviceCommand</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>unmatched</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
+                </processors>
+                <processors>
+                    <id>939779f8-c652-319d-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>288.0</x>
+                        <y>320.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-scripting-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Script Engine</key>
+<value>
+    <name>Script Engine</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+<value>
+    <name>Script File</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>
+    <name>Script Body</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+<value>
+    <name>Module Directory</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Script Engine</key>
+<value>ECMAScript</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>/**
+                      NiFi script to convert incoming commands data in NiFi format.
+
+                      Incoming records format:
+                                            {
+                          "subscriptionId": "6001dd5e5db6c09ff099b8d8",
+                          "data": [
+                            {
+                              "id": "device1_cmd",
+                              "type": "command",
+                              "args": {
+                                "type": "string",
+                                "value": "ls",
+                                "metadata": {}
+                              },
+                              "createdBy": {
+                                "type": "string",
+                                "value": "Opil",
+                                "metadata": {}
+                              },
+                              "operation": {
+                                "type": "string",
+                                "value": "EXECUTE",
+                                "metadata": {}
+                              }
+                            }
+                          ]
+                        }
+
+                      Outgoing records format:
+
+                      {"createdBy":"bc171cc3-74c6-4ab4-9912-b8b35b35c303","args":"ls"}
+
+				      **/
+                      // Get references the the output stream to write results, the input stream to read the content of
+                      // the FlowFile, and to the incoming FlowFile.
+                      var InputStreamCallback = Java.type("org.apache.nifi.processor.io.InputStreamCallback");
+                      var OutputStreamCallback = Java.type("org.apache.nifi.processor.io.OutputStreamCallback");
+                      var IOUtils = Java.type("org.apache.commons.io.IOUtils");
+                      var StandardCharsets = Java.type("java.nio.charset.StandardCharsets");
+                      var flowFile = session.get();
+
+                      // If no FlowFile exists return, otherwise proceed with processing.
+                      if (flowFile != null) {
+                      var dataPoints = [];
+					  var attrs = [];
+                      // Read incoming FlowFile and convert data to records.
+                      session.read(flowFile, new InputStreamCallback(function (inputStream) {
+                      // Parse incoming FlowFile content to JSON.
+                      var text = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+
+
+
+                      var json = JSON.parse(text);
+                     
+                      var jsonEntry = json;
+ 
+                      // Create a variable of output format
+
+				      var dataPoint = {"createdBy":"bc171cc3-74c6-4ab4-9912-b8b35b35c303","args":"ls"}
+
+					  // Put generic entity output (by SAN)
+					  dataPoint.createdBy = jsonEntry.data[0].createdBy.value;
+					  dataPoint.args = jsonEntry.data[0].args.value.substring(jsonEntry.data[0].args.value.lastIndexOf("/")+1);
+					  
+					  
+                      // Push record.
+                      dataPoints.push(dataPoint);
+					  attrs = [jsonEntry.data[0].id, jsonEntry.data[0].type, jsonEntry.data[0].operation.value];
+                      
+                      }));
+				      flowFile = session.putAttribute(flowFile, 'esthesis.hardwareId', attrs[0].slice(0, -4))
+				      flowFile = session.putAttribute(flowFile, 'esthesis.operation', attrs[2])
+				      flowFile = session.putAttribute(flowFile, 'esthesis.type', attrs[1])
+
+                      // Replace FlowFile's content with the data in Orion line protocol.
+                      flowFile = session.write(flowFile, new OutputStreamCallback(function (outputStream) {
+                      outputStream.write(JSON.stringify(dataPoints[0]).getBytes(StandardCharsets.UTF_8));
+                      }));
+                      session.transfer(flowFile, REL_SUCCESS);
+                      }
+                    </value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>ExecuteScript_v1</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.script.ExecuteScript</type>
+                </processors>
+                <processors>
+                    <id>986198a1-8d14-3f36-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>688.0</x>
+                        <y>-72.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-scripting-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Script Engine</key>
+<value>
+    <name>Script Engine</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+<value>
+    <name>Script File</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>
+    <name>Script Body</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+<value>
+    <name>Module Directory</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Script Engine</key>
+<value>ECMAScript</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>/**
+NiFi script to convert incoming commands data in NiFi format.
+
+Incoming records format:
+{
+  "subscriptionId": "6001dd5e5db6c09ff099b8d8",
+  "data": [
+    {
+      "id": "device1_cmd",
+      "type": "command",
+      "args": {
+        "type": "string",
+        "value": "ls",
+        "metadata": {}
+      },
+      "createdBy": {
+        "type": "string",
+        "value": "Opil",
+        "metadata": {}
+      },
+      "operation": {
+        "type": "string",
+        "value": "EXECUTE",
+        "metadata": {}
+      }
+    }
+  ]
+}
+
+
+{
+  "subscriptionId": "60491b496b7bceef42019224",
+  "data": [
+    {
+      "id": "testdev1_cmd",
+      "type": "EsthesisDeviceCommand",
+      "measurementType": {
+        "type": "string",
+        "value": "string",
+        "metadata": {}
+      },
+      "modifiedTime": {
+        "type": "string",
+        "value": "2021-03-10T19:02:55.650Z",
+        "metadata": {}
+      },
+      "readings": {
+        "type": "array",
+        "value": [
+          {
+            "type": "SensorReading",
+            "value": {
+              "reading": {
+                "type": "string",
+                "value": "/home/pi/esthesis/led_off.sh"
+              }
+            }
+          }
+        ],
+        "metadata": {}
+      },
+      "sanID": {
+        "type": "string",
+        "value": "Esthesis_SAN_testdev1",
+        "metadata": {}
+      },
+      "sensorID": {
+        "type": "string",
+        "value": "health",
+        "metadata": {}
+      },
+      "sensorManufacturer": {
+        "type": "string",
+        "value": "Esthesis",
+        "metadata": {}
+      },
+      "sensorType": {
+        "type": "string",
+        "value": "DeviceCommand",
+        "metadata": {}
+      },
+      "units": {
+        "type": "string",
+        "value": "string",
+        "metadata": {}
+      }
+    }
+  ]
+}
+
+Outgoing records format:
+
+{"createdBy":"bc171cc3-74c6-4ab4-9912-b8b35b35c303","args":"ls"}
+
+**/
+// Get references the the output stream to write results, the input stream to read the content of
+// the FlowFile, and to the incoming FlowFile.
+var InputStreamCallback = Java.type("org.apache.nifi.processor.io.InputStreamCallback");
+var OutputStreamCallback = Java.type("org.apache.nifi.processor.io.OutputStreamCallback");
+var IOUtils = Java.type("org.apache.commons.io.IOUtils");
+var StandardCharsets = Java.type("java.nio.charset.StandardCharsets");
+var flowFile = session.get();
+
+// If no FlowFile exists return, otherwise proceed with processing.
+if (flowFile != null) {
+var dataPoints = [];
+var attrs = [];
+// Read incoming FlowFile and convert data to records.
+session.read(flowFile, new InputStreamCallback(function (inputStream) {
+// Parse incoming FlowFile content to JSON.
+var text = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+var json = JSON.parse(text);                    
+var jsonEntry = json;
+
+// Create a variable of output format
+
+
+// Put generic entity output (by SAN)
+//dataPoint.createdBy = jsonEntry.data[0].createdBy.value;
+					  
+// Push record.
+dataPoints.push(json);
+                      
+}));
+flowFile = session.putAttribute(flowFile, 'route.value', dataPoints[0].data[0].type);
+
+// Replace FlowFile's content with the data in Orion line protocol.
+flowFile = session.write(flowFile, new OutputStreamCallback(function (outputStream) {
+outputStream.write(JSON.stringify(dataPoints[0]).getBytes(StandardCharsets.UTF_8));
+}));
+session.transfer(flowFile, REL_SUCCESS);
+}                    </value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>ExecuteScript_v2</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.script.ExecuteScript</type>
+                </processors>
+                <processors>
+                    <id>cdfebd3a-f941-3c32-0000-000000000000</id>
+                    <parentGroupId>9b1dac32-3aa0-3c3b-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>688.0</x>
+                        <y>-272.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments>URL format: /{hardwareId}/{type}/{operation}</comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Listening Port</key>
+<value>
+    <name>Listening Port</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Hostname</key>
+<value>
+    <name>Hostname</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.RestrictedSSLContextService</identifiesControllerService>
+    <name>SSL Context Service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>HTTP Context Map</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.http.HttpContextMap</identifiesControllerService>
+    <name>HTTP Context Map</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Allowed Paths</key>
+<value>
+    <name>Allowed Paths</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Default URL Character Set</key>
+<value>
+    <name>Default URL Character Set</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Allow GET</key>
+<value>
+    <name>Allow GET</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Allow POST</key>
+<value>
+    <name>Allow POST</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Allow PUT</key>
+<value>
+    <name>Allow PUT</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Allow DELETE</key>
+<value>
+    <name>Allow DELETE</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Allow HEAD</key>
+<value>
+    <name>Allow HEAD</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Allow OPTIONS</key>
+<value>
+    <name>Allow OPTIONS</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Additional HTTP Methods</key>
+<value>
+    <name>Additional HTTP Methods</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Client Authentication</key>
+<value>
+    <name>Client Authentication</name>
+</value>
+                            </entry>
+                            <entry>
+<key>container-queue-size</key>
+<value>
+    <name>container-queue-size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>multipart-request-max-size</key>
+<value>
+    <name>multipart-request-max-size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>multipart-read-buffer-size</key>
+<value>
+    <name>multipart-read-buffer-size</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Listening Port</key>
+<value>20001</value>
+                            </entry>
+                            <entry>
+<key>Hostname</key>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+                            </entry>
+                            <entry>
+<key>HTTP Context Map</key>
+<value>f20c667a-0317-3bf2-0000-000000000000</value>
+                            </entry>
+                            <entry>
+<key>Allowed Paths</key>
+                            </entry>
+                            <entry>
+<key>Default URL Character Set</key>
+<value>UTF-8</value>
+                            </entry>
+                            <entry>
+<key>Allow GET</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Allow POST</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Allow PUT</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Allow DELETE</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Allow HEAD</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Allow OPTIONS</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Additional HTTP Methods</key>
+                            </entry>
+                            <entry>
+<key>Client Authentication</key>
+<value>No Authentication</value>
+                            </entry>
+                            <entry>
+<key>container-queue-size</key>
+<value>50</value>
+                            </entry>
+                            <entry>
+<key>multipart-request-max-size</key>
+<value>1 MB</value>
+                            </entry>
+                            <entry>
+<key>multipart-read-buffer-size</key>
+<value>512 KB</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>100 ms</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>HandleHttpRequest</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.HandleHttpRequest</type>
+                </processors>
+            </contents>
+            <name>OpilHttpRequestHandler</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>03/23/2021 17:30:23 UTC</timestamp>
+</template>

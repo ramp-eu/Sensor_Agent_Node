@@ -1,0 +1,2579 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description></description>
+    <groupId>39e498c2-c3b1-3ee8-1deb-ced0a1a5b6f7</groupId>
+    <name>opil_telemetry_writer_final</name>
+    <snippet>
+        <processGroups>
+            <id>6206e8c9-366f-3b56-0000-000000000000</id>
+            <parentGroupId>590a0570-095f-3ca5-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <comments></comments>
+            <contents>
+                <connections>
+                    <id>1ef2d2be-1bde-31fa-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>1104.0</x>
+                        <y>264.0</y>
+                    </bends>
+                    <destination>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>b31b5c88-4b64-3bc7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>0</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>No Retry</selectedRelationships>
+                    <source>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>4977dac6-5e44-36b2-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>2be7fb08-c45f-3962-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>67b3c2dc-e75c-3cd6-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>No Retry</selectedRelationships>
+                    <source>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>307db45f-31c8-38e7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>5194b48a-d35a-3662-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>1936.0</x>
+                        <y>-296.0</y>
+                    </bends>
+                    <destination>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>d0f79df1-6a2d-30ad-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>0</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>df7713ad-3995-33ee-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>596b8f3f-8f23-3a92-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>1520.0</x>
+                        <y>384.0</y>
+                    </bends>
+                    <destination>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>5da76b8a-c209-39ff-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>0</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>67b3c2dc-e75c-3cd6-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>653d892a-886c-39b1-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>df7713ad-3995-33ee-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <source>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>9a6b8c75-c144-33d1-0000-000000000000</id>
+                        <type>INPUT_PORT</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>7e98d892-f568-3440-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>5da76b8a-c209-39ff-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>b31b5c88-4b64-3bc7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>8e4d5c1b-d37c-38ee-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>64823a4c-aa69-351b-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>No Retry</selectedRelationships>
+                    <source>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>d0f79df1-6a2d-30ad-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>b11bce46-6f92-3e7e-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>307db45f-31c8-38e7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>df7713ad-3995-33ee-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>d744c2ed-755a-3059-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>1936.0</x>
+                        <y>384.0</y>
+                    </bends>
+                    <destination>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>5da76b8a-c209-39ff-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>0</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>64823a4c-aa69-351b-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>e5fd36f2-56fe-358c-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>4977dac6-5e44-36b2-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>aa2de006-7a13-3261-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>f6cc1783-0cd9-357b-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>1104.0</x>
+                        <y>-296.0</y>
+                    </bends>
+                    <destination>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>aa2de006-7a13-3261-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>0</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>6206e8c9-366f-3b56-0000-000000000000</groupId>
+                        <id>df7713ad-3995-33ee-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <inputPorts>
+                    <id>9a6b8c75-c144-33d1-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1400.0</x>
+                        <y>-464.0</y>
+                    </position>
+                    <comments></comments>
+                    <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                    <name>writers_telemetry-opil_writer_in</name>
+                    <state>RUNNING</state>
+                    <type>INPUT_PORT</type>
+                </inputPorts>
+                <processors>
+                    <id>307db45f-31c8-38e7-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1344.0</x>
+                        <y>-120.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>HTTP Method</key>
+<value>
+    <name>HTTP Method</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Remote URL</key>
+<value>
+    <name>Remote URL</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>SSL Context Service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>
+    <name>Connection Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Read Timeout</key>
+<value>
+    <name>Read Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Include Date Header</key>
+<value>
+    <name>Include Date Header</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Follow Redirects</key>
+<value>
+    <name>Follow Redirects</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Send</key>
+<value>
+    <name>Attributes to Send</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Username</key>
+<value>
+    <name>Basic Authentication Username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Password</key>
+<value>
+    <name>Basic Authentication Password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+    <name>proxy-configuration-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+<value>
+    <name>Proxy Host</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+<value>
+    <name>Proxy Port</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Type</key>
+<value>
+    <name>Proxy Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-user</key>
+<value>
+    <name>invokehttp-proxy-user</name>
+</value>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-password</key>
+<value>
+    <name>invokehttp-proxy-password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Put Response Body In Attribute</key>
+<value>
+    <name>Put Response Body In Attribute</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Max Length To Put In Attribute</key>
+<value>
+    <name>Max Length To Put In Attribute</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Digest Authentication</key>
+<value>
+    <name>Digest Authentication</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Always Output Response</key>
+<value>
+    <name>Always Output Response</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Add Response Headers to Request</key>
+<value>
+    <name>Add Response Headers to Request</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Content-Type</key>
+<value>
+    <name>Content-Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>send-message-body</key>
+<value>
+    <name>send-message-body</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Use Chunked Encoding</key>
+<value>
+    <name>Use Chunked Encoding</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Penalize on "No Retry"</key>
+<value>
+    <name>Penalize on "No Retry"</name>
+</value>
+                            </entry>
+                            <entry>
+<key>use-etag</key>
+<value>
+    <name>use-etag</name>
+</value>
+                            </entry>
+                            <entry>
+<key>etag-max-cache-size</key>
+<value>
+    <name>etag-max-cache-size</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>HTTP Method</key>
+<value>GET</value>
+                            </entry>
+                            <entry>
+<key>Remote URL</key>
+<value>${contextBrokerUrl}/v2/entities/${esthesis.hardwareId}_cmd/attrs</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>5 secs</value>
+                            </entry>
+                            <entry>
+<key>Read Timeout</key>
+<value>15 secs</value>
+                            </entry>
+                            <entry>
+<key>Include Date Header</key>
+<value>True</value>
+                            </entry>
+                            <entry>
+<key>Follow Redirects</key>
+<value>True</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Send</key>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Username</key>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Password</key>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+                            </entry>
+                            <entry>
+<key>Proxy Type</key>
+<value>http</value>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-user</key>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-password</key>
+                            </entry>
+                            <entry>
+<key>Put Response Body In Attribute</key>
+                            </entry>
+                            <entry>
+<key>Max Length To Put In Attribute</key>
+<value>256</value>
+                            </entry>
+                            <entry>
+<key>Digest Authentication</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Always Output Response</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Add Response Headers to Request</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Content-Type</key>
+<value>${mime.type}</value>
+                            </entry>
+                            <entry>
+<key>send-message-body</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Use Chunked Encoding</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Penalize on "No Retry"</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>use-etag</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>etag-max-cache-size</key>
+<value>10MB</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>InvokeHTTP-GET-CMD</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>No Retry</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Original</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Response</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Retry</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.InvokeHTTP</type>
+                </processors>
+                <processors>
+                    <id>4977dac6-5e44-36b2-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>928.0</x>
+                        <y>88.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>HTTP Method</key>
+<value>
+    <name>HTTP Method</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Remote URL</key>
+<value>
+    <name>Remote URL</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>SSL Context Service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>
+    <name>Connection Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Read Timeout</key>
+<value>
+    <name>Read Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Include Date Header</key>
+<value>
+    <name>Include Date Header</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Follow Redirects</key>
+<value>
+    <name>Follow Redirects</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Send</key>
+<value>
+    <name>Attributes to Send</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Username</key>
+<value>
+    <name>Basic Authentication Username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Password</key>
+<value>
+    <name>Basic Authentication Password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+    <name>proxy-configuration-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+<value>
+    <name>Proxy Host</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+<value>
+    <name>Proxy Port</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Type</key>
+<value>
+    <name>Proxy Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-user</key>
+<value>
+    <name>invokehttp-proxy-user</name>
+</value>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-password</key>
+<value>
+    <name>invokehttp-proxy-password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Put Response Body In Attribute</key>
+<value>
+    <name>Put Response Body In Attribute</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Max Length To Put In Attribute</key>
+<value>
+    <name>Max Length To Put In Attribute</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Digest Authentication</key>
+<value>
+    <name>Digest Authentication</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Always Output Response</key>
+<value>
+    <name>Always Output Response</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Add Response Headers to Request</key>
+<value>
+    <name>Add Response Headers to Request</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Content-Type</key>
+<value>
+    <name>Content-Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>send-message-body</key>
+<value>
+    <name>send-message-body</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Use Chunked Encoding</key>
+<value>
+    <name>Use Chunked Encoding</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Penalize on "No Retry"</key>
+<value>
+    <name>Penalize on "No Retry"</name>
+</value>
+                            </entry>
+                            <entry>
+<key>use-etag</key>
+<value>
+    <name>use-etag</name>
+</value>
+                            </entry>
+                            <entry>
+<key>etag-max-cache-size</key>
+<value>
+    <name>etag-max-cache-size</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>HTTP Method</key>
+<value>PUT</value>
+                            </entry>
+                            <entry>
+<key>Remote URL</key>
+<value>${contextBrokerUrl}/v2/entities/${esthesis.hardwareId}/attrs</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>5 secs</value>
+                            </entry>
+                            <entry>
+<key>Read Timeout</key>
+<value>15 secs</value>
+                            </entry>
+                            <entry>
+<key>Include Date Header</key>
+<value>True</value>
+                            </entry>
+                            <entry>
+<key>Follow Redirects</key>
+<value>True</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Send</key>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Username</key>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Password</key>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+                            </entry>
+                            <entry>
+<key>Proxy Type</key>
+<value>http</value>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-user</key>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-password</key>
+                            </entry>
+                            <entry>
+<key>Put Response Body In Attribute</key>
+                            </entry>
+                            <entry>
+<key>Max Length To Put In Attribute</key>
+<value>256</value>
+                            </entry>
+                            <entry>
+<key>Digest Authentication</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Always Output Response</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Add Response Headers to Request</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Content-Type</key>
+<value>${mime.type}</value>
+                            </entry>
+                            <entry>
+<key>send-message-body</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Use Chunked Encoding</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Penalize on "No Retry"</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>use-etag</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>etag-max-cache-size</key>
+<value>10MB</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>InvokeHTTP-PUT</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>No Retry</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Original</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Response</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Retry</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.InvokeHTTP</type>
+                </processors>
+                <processors>
+                    <id>5da76b8a-c209-39ff-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1344.0</x>
+                        <y>584.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>HTTP Method</key>
+<value>
+    <name>HTTP Method</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Remote URL</key>
+<value>
+    <name>Remote URL</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>SSL Context Service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>
+    <name>Connection Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Read Timeout</key>
+<value>
+    <name>Read Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Include Date Header</key>
+<value>
+    <name>Include Date Header</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Follow Redirects</key>
+<value>
+    <name>Follow Redirects</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Send</key>
+<value>
+    <name>Attributes to Send</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Username</key>
+<value>
+    <name>Basic Authentication Username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Password</key>
+<value>
+    <name>Basic Authentication Password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+    <name>proxy-configuration-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+<value>
+    <name>Proxy Host</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+<value>
+    <name>Proxy Port</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Type</key>
+<value>
+    <name>Proxy Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-user</key>
+<value>
+    <name>invokehttp-proxy-user</name>
+</value>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-password</key>
+<value>
+    <name>invokehttp-proxy-password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Put Response Body In Attribute</key>
+<value>
+    <name>Put Response Body In Attribute</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Max Length To Put In Attribute</key>
+<value>
+    <name>Max Length To Put In Attribute</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Digest Authentication</key>
+<value>
+    <name>Digest Authentication</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Always Output Response</key>
+<value>
+    <name>Always Output Response</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Add Response Headers to Request</key>
+<value>
+    <name>Add Response Headers to Request</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Content-Type</key>
+<value>
+    <name>Content-Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>send-message-body</key>
+<value>
+    <name>send-message-body</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Use Chunked Encoding</key>
+<value>
+    <name>Use Chunked Encoding</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Penalize on "No Retry"</key>
+<value>
+    <name>Penalize on "No Retry"</name>
+</value>
+                            </entry>
+                            <entry>
+<key>use-etag</key>
+<value>
+    <name>use-etag</name>
+</value>
+                            </entry>
+                            <entry>
+<key>etag-max-cache-size</key>
+<value>
+    <name>etag-max-cache-size</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>HTTP Method</key>
+<value>POST</value>
+                            </entry>
+                            <entry>
+<key>Remote URL</key>
+<value>${contextBrokerUrl}/v2/entities</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>5 secs</value>
+                            </entry>
+                            <entry>
+<key>Read Timeout</key>
+<value>15 secs</value>
+                            </entry>
+                            <entry>
+<key>Include Date Header</key>
+<value>True</value>
+                            </entry>
+                            <entry>
+<key>Follow Redirects</key>
+<value>True</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Send</key>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Username</key>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Password</key>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+                            </entry>
+                            <entry>
+<key>Proxy Type</key>
+<value>http</value>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-user</key>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-password</key>
+                            </entry>
+                            <entry>
+<key>Put Response Body In Attribute</key>
+                            </entry>
+                            <entry>
+<key>Max Length To Put In Attribute</key>
+<value>256</value>
+                            </entry>
+                            <entry>
+<key>Digest Authentication</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Always Output Response</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Add Response Headers to Request</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Content-Type</key>
+<value>${mime.type}</value>
+                            </entry>
+                            <entry>
+<key>send-message-body</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Use Chunked Encoding</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Penalize on "No Retry"</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>use-etag</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>etag-max-cache-size</key>
+<value>10MB</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>InvokeHTTP-POST</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>No Retry</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Original</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Response</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Retry</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.InvokeHTTP</type>
+                </processors>
+                <processors>
+                    <id>64823a4c-aa69-351b-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1760.0</x>
+                        <y>88.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-scripting-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Script Engine</key>
+<value>
+    <name>Script Engine</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+<value>
+    <name>Script File</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>
+    <name>Script Body</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+<value>
+    <name>Module Directory</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Script Engine</key>
+<value>ECMAScript</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>/**
+NiFi script to convert incoming telemetry data in Orion format.
+
+Incoming records format:
+                      
+[
+  {
+    "measurement": "health",
+    "timestamp": 1608551274282,
+    "fields": {
+      "cpuTemperature": 0,
+      "memoryAvailable": 51077320704,
+      "memoryTotal": 67355131904,
+      "load1": 0.99,
+      "load5": 0.87,
+      "load15": 0.85,
+      "currentTime": 1608551274081,
+      "upTime": 961500173,
+      "ipAddress": "eth0: 172.18.0.9|lo: 127.0.0.1",
+      "runtimeVersion": "2.0.0",
+      "runtimeCommitId": "462e308589d3486d7b8f0d2b6a298bad6cd4118f",
+      "mount_free_/": 10145062912,
+      "mount_total_/": 10725883904,
+      "mount_free_/etc/resolv.conf": 370725134336,
+      "mount_total_/etc/resolv.conf": 536608768000,
+      "mount_free_/etc/hostname": 370725134336,
+      "mount_total_/etc/hostname": 536608768000,
+      "mount_free_/etc/hosts": 370725134336,
+      "mount_total_/etc/hosts": 536608768000
+    },
+    "tags": {
+      "hardware_id": "device1",
+      "type": "telemetry"
+    }
+  }
+]
+
+Outgoing records format:
+
+{
+  "id": "test_device_Reply",
+  "type": "EsthesisDeviceReply",
+  "measurementType": {
+    "type": "string",
+    "value": "boolean",
+    "metadata": {}
+  },
+  "modifiedTime": {
+    "type": "string",
+    "value": "2020-12-23T20:33:15.454Z",
+    "metadata": {}
+  },
+  "readings": {
+    "type": "array",
+    "value": [
+      {
+        "type": "SensorReading",
+        "value": {
+          "reading": {
+            "type": "string",
+            "value": ls
+          }
+        }
+      }
+    ],
+    "metadata": {}
+  },
+  "sanID": {
+    "type": "string",
+    "value": "SAN_test_device",
+    "metadata": {}
+  },
+  "sensorID": {
+    "type": "string",
+    "value": "test_device",
+    "metadata": {}
+  },
+  "sensorManufacturer": {
+    "type": "string",
+    "value": "-",
+    "metadata": {}
+  },
+  "sensorType": {
+    "type": "string",
+    "value": "HMI button",
+    "metadata": {}
+  },
+  "units": {
+    "type": "string",
+    "value": "string",
+    "metadata": {}
+  }
+}
+
+**/
+// Get references the the output stream to write results, the input stream to read the content of
+// the FlowFile, and to the incoming FlowFile.
+var InputStreamCallback = Java.type("org.apache.nifi.processor.io.InputStreamCallback");
+var OutputStreamCallback = Java.type("org.apache.nifi.processor.io.OutputStreamCallback");
+var IOUtils = Java.type("org.apache.commons.io.IOUtils");
+var StandardCharsets = Java.type("java.nio.charset.StandardCharsets");
+var flowFile = session.get();
+
+// If no FlowFile exists return, otherwise proceed with processing.
+if (flowFile != null) {
+    var dataPoints = [];
+    // Read incoming FlowFile and convert data to records.
+    session.read(flowFile, new InputStreamCallback(function (inputStream) {
+        // Parse incoming FlowFile content to JSON.
+        var text = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+        var json= JSON.parse(text);
+        for (var i in json) {
+            var jsonEntry = json[i];
+        // Create a variable of output format
+        var dataPoint = {"id":"name","type":"SensorAgent","measurementType":{"type":"string","value":"numeric","metadata":{}},"modifiedTime":{"type":"string","value":"2020-12-24T14:19:38.265Z","metadata":{}},"readings":{"type":"array","value":[{"type":"SensorReading","value":{"reading":{"type":"string","value":""}}}],"metadata":{}},"sanID":{"type":"string","value":"SANdevice2","metadata":{}},"sensorID":{"type":"string","value":"device2","metadata":{}},"sensorManufacturer":{"type":"string","value":"Esthesis_Demo","metadata":{}},"sensorType":{"type":"string","value":"_SENSOR","metadata":{}},"units":{"type":"string","value":"number","metadata":{}}};
+        // Put generic entity output (by SAN)
+        dataPoint.id = flowFile.getAttribute('esthesis.hardwareId')+"_Reply";
+        dataPoint.type = "EsthesisDeviceReply";
+        dataPoint.measurementType.value = "string";
+        dataPoint.modifiedTime.value =new Date(jsonEntry.timestamp).toISOString();
+        //dataPoint.modifiedTime.value =new Date(flowFile.getAttribute('esthesis.nifi.timestamp')).toISOString();
+        dataPoint.sanID.value = "Esthesis_SAN_"+flowFile.getAttribute('esthesis.hardwareId');
+        dataPoint.sensorID.value = jsonEntry.measurement;
+        dataPoint.sensorManufacturer.value = "Esthesis";
+        dataPoint.sensorType.value = "DeviceReply";
+        dataPoint.units.value = "string";              
+        // Push record.
+        dataPoints.push(dataPoint);
+    }}));
+    flowFile = session.putAttribute(flowFile, 'esthesis.hardwareId', dataPoints[0].id);
+    flowFile = session.putAttribute(flowFile, 'mime.type', 'application/json');
+    // Replace FlowFile's content with the data in Orion line protocol.
+    flowFile = session.write(flowFile, new OutputStreamCallback(function (outputStream) {
+    outputStream.write(JSON.stringify(dataPoints[0]).getBytes(StandardCharsets.UTF_8));
+    }));
+    session.transfer(flowFile, REL_SUCCESS);
+}
+                    </value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>5 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>ExecuteScript</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.script.ExecuteScript</type>
+                </processors>
+                <processors>
+                    <id>67b3c2dc-e75c-3cd6-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1344.0</x>
+                        <y>88.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-scripting-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Script Engine</key>
+<value>
+    <name>Script Engine</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+<value>
+    <name>Script File</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>
+    <name>Script Body</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+<value>
+    <name>Module Directory</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Script Engine</key>
+<value>ECMAScript</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>/**
+NiFi script to convert incoming telemetry data in Orion format.
+
+Incoming records format:
+                      
+[
+  {
+    "measurement": "health",
+    "timestamp": 1608551274282,
+    "fields": {
+      "cpuTemperature": 0,
+      "memoryAvailable": 51077320704,
+      "memoryTotal": 67355131904,
+      "load1": 0.99,
+      "load5": 0.87,
+      "load15": 0.85,
+      "currentTime": 1608551274081,
+      "upTime": 961500173,
+      "ipAddress": "eth0: 172.18.0.9|lo: 127.0.0.1",
+      "runtimeVersion": "2.0.0",
+      "runtimeCommitId": "462e308589d3486d7b8f0d2b6a298bad6cd4118f",
+      "mount_free_/": 10145062912,
+      "mount_total_/": 10725883904,
+      "mount_free_/etc/resolv.conf": 370725134336,
+      "mount_total_/etc/resolv.conf": 536608768000,
+      "mount_free_/etc/hostname": 370725134336,
+      "mount_total_/etc/hostname": 536608768000,
+      "mount_free_/etc/hosts": 370725134336,
+      "mount_total_/etc/hosts": 536608768000
+    },
+    "tags": {
+      "hardware_id": "device1",
+      "type": "telemetry"
+    }
+  }
+]
+
+Outgoing records format:
+
+{
+  "id": "test_device_Reply",
+  "type": "EsthesisDeviceReply",
+  "measurementType": {
+    "type": "string",
+    "value": "boolean",
+    "metadata": {}
+  },
+  "modifiedTime": {
+    "type": "string",
+    "value": "2020-12-23T20:33:15.454Z",
+    "metadata": {}
+  },
+  "readings": {
+    "type": "array",
+    "value": [
+      {
+        "type": "SensorReading",
+        "value": {
+          "reading": {
+            "type": "string",
+            "value": ls
+          }
+        }
+      }
+    ],
+    "metadata": {}
+  },
+  "sanID": {
+    "type": "string",
+    "value": "SAN_test_device",
+    "metadata": {}
+  },
+  "sensorID": {
+    "type": "string",
+    "value": "test_device",
+    "metadata": {}
+  },
+  "sensorManufacturer": {
+    "type": "string",
+    "value": "-",
+    "metadata": {}
+  },
+  "sensorType": {
+    "type": "string",
+    "value": "HMI button",
+    "metadata": {}
+  },
+  "units": {
+    "type": "string",
+    "value": "string",
+    "metadata": {}
+  }
+}
+
+**/
+// Get references the the output stream to write results, the input stream to read the content of
+// the FlowFile, and to the incoming FlowFile.
+var InputStreamCallback = Java.type("org.apache.nifi.processor.io.InputStreamCallback");
+var OutputStreamCallback = Java.type("org.apache.nifi.processor.io.OutputStreamCallback");
+var IOUtils = Java.type("org.apache.commons.io.IOUtils");
+var StandardCharsets = Java.type("java.nio.charset.StandardCharsets");
+var flowFile = session.get();
+
+// If no FlowFile exists return, otherwise proceed with processing.
+if (flowFile != null) {
+    var dataPoints = [];
+    // Read incoming FlowFile and convert data to records.
+    session.read(flowFile, new InputStreamCallback(function (inputStream) {
+        // Parse incoming FlowFile content to JSON.
+        var text = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+        var json= JSON.parse(text);
+        for (var i in json) {
+            var jsonEntry = json[i];
+        // Create a variable of output format
+        var dataPoint = {"id":"name","type":"SensorAgent","measurementType":{"type":"string","value":"numeric","metadata":{}},"modifiedTime":{"type":"string","value":"2020-12-24T14:19:38.265Z","metadata":{}},"readings":{"type":"array","value":[{"type":"SensorReading","value":{"reading":{"type":"string","value":""}}}],"metadata":{}},"sanID":{"type":"string","value":"SANdevice2","metadata":{}},"sensorID":{"type":"string","value":"device2","metadata":{}},"sensorManufacturer":{"type":"string","value":"Esthesis_Demo","metadata":{}},"sensorType":{"type":"string","value":"_SENSOR","metadata":{}},"units":{"type":"string","value":"number","metadata":{}}};
+        // Put generic entity output (by SAN)
+        dataPoint.id = flowFile.getAttribute('esthesis.hardwareId')+"_cmd";
+        dataPoint.type = "EsthesisDeviceCommand";
+        dataPoint.measurementType.value = "string";
+        dataPoint.modifiedTime.value =new Date(jsonEntry.timestamp).toISOString();
+        //dataPoint.modifiedTime.value =new Date(flowFile.getAttribute('esthesis.nifi.timestamp')).toISOString();
+        dataPoint.sanID.value = "Esthesis_SAN_"+flowFile.getAttribute('esthesis.hardwareId');
+        dataPoint.sensorID.value = jsonEntry.measurement;
+        dataPoint.sensorManufacturer.value = "Esthesis";
+        dataPoint.sensorType.value = "DeviceCommand";
+        dataPoint.units.value = "string";              
+        // Push record.
+        dataPoints.push(dataPoint);
+    }}));
+
+    // Replace FlowFile's content with the data in Orion line protocol.
+    flowFile = session.putAttribute(flowFile, 'esthesis.hardwareId', dataPoints[0].id);
+    flowFile = session.putAttribute(flowFile, 'mime.type', 'application/json');
+    flowFile = session.write(flowFile, new OutputStreamCallback(function (outputStream) {
+    outputStream.write(JSON.stringify(dataPoints[0]).getBytes(StandardCharsets.UTF_8));
+    }));
+    session.transfer(flowFile, REL_SUCCESS);
+}
+                    </value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>5 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>ExecuteScript</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.script.ExecuteScript</type>
+                </processors>
+                <processors>
+                    <id>aa2de006-7a13-3261-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>928.0</x>
+                        <y>-120.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-scripting-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Script Engine</key>
+<value>
+    <name>Script Engine</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+<value>
+    <name>Script File</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>
+    <name>Script Body</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+<value>
+    <name>Module Directory</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Script Engine</key>
+<value>ECMAScript</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>/**
+NiFi script to convert incoming telemetry data in Orion format.
+
+Incoming records format:
+[
+  {
+    "measurement": "health",
+    "timestamp": 1608551274282,
+    "fields": {
+      "cpuTemperature": 0,
+      "memoryAvailable": 51077320704,
+      "memoryTotal": 67355131904,
+      "load1": 0.99,
+      "load5": 0.87,
+      "load15": 0.85,
+      "currentTime": 1608551274081,
+      "upTime": 961500173,
+      "ipAddress": "eth0: 172.18.0.9|lo: 127.0.0.1",
+      "runtimeVersion": "2.0.0",
+      "runtimeCommitId": "462e308589d3486d7b8f0d2b6a298bad6cd4118f",
+      "mount_free_/": 10145062912,
+      "mount_total_/": 10725883904,
+      "mount_free_/etc/resolv.conf": 370725134336,
+      "mount_total_/etc/resolv.conf": 536608768000,
+      "mount_free_/etc/hostname": 370725134336,
+      "mount_total_/etc/hostname": 536608768000,
+      "mount_free_/etc/hosts": 370725134336,
+      "mount_total_/etc/hosts": 536608768000
+    },
+    "tags": {
+      "hardware_id": "device1",
+      "type": "telemetry"
+    }
+  }
+]
+
+Outgoing records format:
+{
+  "measurementType": {
+    "type": "string",
+    "value": "numeric",
+    "metadata": {}
+  },
+  "modifiedTime": {
+    "type": "string",
+    "value": "2020-12-24T13:37:56.611444Z",
+    "metadata": {}
+  },
+  "readings": {
+    "type": "array",
+    "value": [
+      {
+        "type": "SensorReading",
+        "value": {
+          "reading": {
+            "type": "number",
+            "value": -4.183096957
+          }
+        }
+      }
+    ],
+    "metadata": {}
+  },
+  "sanID": {
+    "type": "string",
+    "value": "xy_SAN",
+    "metadata": {}
+  },
+  "sensorID": {
+    "type": "string",
+    "value": "x_coordinate",
+    "metadata": {}
+  },
+  "sensorManufacturer": {
+    "type": "string",
+    "value": "DemoCompany",
+    "metadata": {}
+  },
+  "sensorType": {
+    "type": "string",
+    "value": "POSITION_SENSOR",
+    "metadata": {}
+  },
+  "units": {
+    "type": "string",
+    "value": "number",
+    "metadata": {}
+  }
+}
+**/                    
+// Get references the the output stream to write results, the input stream to read the content of
+// the FlowFile, and to the incoming FlowFile.
+var InputStreamCallback = Java.type("org.apache.nifi.processor.io.InputStreamCallback");
+var OutputStreamCallback = Java.type("org.apache.nifi.processor.io.OutputStreamCallback");
+var IOUtils = Java.type("org.apache.commons.io.IOUtils");
+var StandardCharsets = Java.type("java.nio.charset.StandardCharsets");
+var flowFile = session.get();
+// If no FlowFile exists return, otherwise proceed with processing.
+if (flowFile != null) {
+var dataPoints = [];
+var change_esthesis_hardwareId = [];
+// Read incoming FlowFile and convert data to records.
+session.read(flowFile, new InputStreamCallback(function (inputStream) {
+// Parse incoming FlowFile content to JSON.
+var text = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+var json = JSON.parse(text);
+// Iterate through records.
+for (var i in json) {
+var jsonEntry = json[i];
+for (var j in jsonEntry.fields){
+// Create a variable of output format
+var dataPoint = {"measurementType":{"type":"string","value":"numeric","metadata":{}},"modifiedTime":{"type":"string","value":"2020-12-23T20:33:15.454Z","metadata":{}},"readings":{"type":"array","value":[{"type":"SensorReading","value":{"reading":{"type":"number","value":0.1}}}],"metadata":{}},"sanID":{"type":"string","value":"SAN_test_device","metadata":{}},"sensorID":{"type":"string","value":"test_device","metadata":{}},"sensorManufacturer":{"type":"string","value":"-","metadata":{}},"sensorType":{"type":"string","value":"HMI button","metadata":{}},"units":{"type":"string","value":"number","metadata":{}}};
+// Put generic entity output (by SAN)
+dataPoint.measurementType.value = "Number";
+dataPoint.modifiedTime.value =new Date(jsonEntry.timestamp).toISOString();
+dataPoint.readings.value[0].value.reading.value = jsonEntry.fields[j]
+dataPoint.sanID.value = "Esthesis_SAN_"+flowFile.getAttribute('esthesis.hardwareId');
+dataPoint.sensorID.value = jsonEntry.measurement;
+dataPoint.sensorManufacturer.value = "Esthesis";
+dataPoint.sensorType.value = j;
+dataPoint.units.value = "number";
+change_esthesis_hardwareId.push(jsonEntry.tags.hardware_id+"_"+j); 
+dataPoints.push(dataPoint);                         
+}
+}
+}));
+/**
+flowFile = session.putAttribute(flowFile, 'esthesis.hardwareId', change_esthesis_hardwareId[2]);
+flowFile = session.putAttribute(flowFile, 'mime.type', 'application/json');
+// Replace FlowFile's content with the data in Orion line protocol.
+flowFile = session.write(flowFile, new OutputStreamCallback(function (outputStream) {
+outputStream.write(JSON.stringify(dataPoints[2]).getBytes(StandardCharsets.UTF_8));
+}));
+session.transfer(flowFile, REL_SUCCESS);
+} */
+
+var flowFiles = [];
+var newflowFiles = [];
+//(let i = 0; i &lt; cars.length; i++)
+for (var z = 0 ; z &lt; dataPoints.length; z++){
+newflowFile = session.create(flowFile);
+newflowFile = session.putAttribute(newflowFile, 'esthesis.hardwareId', change_esthesis_hardwareId[z]);
+newflowFile = session.putAttribute(newflowFile, 'mime.type', 'application/json');
+// Replace FlowFile's content with the data in Orion line protocol.
+newflowFiles.push(session.write(newflowFile, new OutputStreamCallback(function (outputStream) {
+outputStream.write(JSON.stringify(dataPoints[z]).getBytes(StandardCharsets.UTF_8));
+}))); 
+}
+//for (var w = 0 ; w &lt; dataPoints.length; w++){
+session.transfer(newflowFiles, REL_SUCCESS);
+session.remove(flowFile)
+}</value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>5 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>ExecuteScript</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.script.ExecuteScript</type>
+                </processors>
+                <processors>
+                    <id>b31b5c88-4b64-3bc7-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>928.0</x>
+                        <y>312.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-scripting-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Script Engine</key>
+<value>
+    <name>Script Engine</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+<value>
+    <name>Script File</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>
+    <name>Script Body</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+<value>
+    <name>Module Directory</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Script Engine</key>
+<value>ECMAScript</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>/**
+NiFi script to convert incoming telemetry data in Orion format.
+
+Incoming records format:
+                      
+{
+  "measurementType": {
+    "type": "string",
+    "value": "numeric",
+    "metadata": {}
+  },
+  "modifiedTime": {
+    "type": "string",
+    "value": "2020-12-24T13:37:56.611444Z",
+    "metadata": {}
+  },
+  "readings": {
+    "type": "array",
+    "value": [
+      {
+        "type": "SensorReading",
+        "value": {
+          "reading": {
+            "type": "number",
+            "value": -4.183096957
+          }
+        }
+      }
+    ],
+    "metadata": {}
+  },
+  "sanID": {
+    "type": "string",
+    "value": "xy_SAN",
+    "metadata": {}
+  },
+  "sensorID": {
+    "type": "string",
+    "value": "x_coordinate",
+    "metadata": {}
+  },
+  "sensorManufacturer": {
+    "type": "string",
+    "value": "DemoCompany",
+    "metadata": {}
+  },
+  "sensorType": {
+    "type": "string",
+    "value": "POSITION_SENSOR",
+    "metadata": {}
+  },
+  "units": {
+    "type": "string",
+    "value": "number",
+    "metadata": {}
+  }
+}
+
+
+Outgoing records format:
+
+{
+  "id": "test_device",
+  "type": "SensorAgent",
+  "measurementType": {
+    "type": "string",
+    "value": "boolean",
+    "metadata": {}
+  },
+  "modifiedTime": {
+    "type": "string",
+    "value": "2020-12-23T20:33:15.454Z",
+    "metadata": {}
+  },
+  "readings": {
+    "type": "array",
+    "value": [
+      {
+        "type": "SensorReading",
+        "value": {
+          "reading": {
+            "type": "boolean",
+            "value": false
+          }
+        }
+      }
+    ],
+    "metadata": {}
+  },
+  "sanID": {
+    "type": "string",
+    "value": "SAN_test_device",
+    "metadata": {}
+  },
+  "sensorID": {
+    "type": "string",
+    "value": "test_device",
+    "metadata": {}
+  },
+  "sensorManufacturer": {
+    "type": "string",
+    "value": "-",
+    "metadata": {}
+  },
+  "sensorType": {
+    "type": "string",
+    "value": "HMI button",
+    "metadata": {}
+  },
+  "units": {
+    "type": "string",
+    "value": "boolean",
+    "metadata": {}
+  }
+}
+
+**/
+// Get references the the output stream to write results, the input stream to read the content of
+// the FlowFile, and to the incoming FlowFile.
+var InputStreamCallback = Java.type("org.apache.nifi.processor.io.InputStreamCallback");
+var OutputStreamCallback = Java.type("org.apache.nifi.processor.io.OutputStreamCallback");
+var IOUtils = Java.type("org.apache.commons.io.IOUtils");
+var StandardCharsets = Java.type("java.nio.charset.StandardCharsets");
+var flowFile = session.get();
+
+// If no FlowFile exists return, otherwise proceed with processing.
+if (flowFile != null) {
+    var dataPoints = [];
+    // Read incoming FlowFile and convert data to records.
+    session.read(flowFile, new InputStreamCallback(function (inputStream) {
+        // Parse incoming FlowFile content to JSON.
+        var text = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+        var jsonEntry= JSON.parse(text);
+        // Create a variable of output format
+        var dataPoint = {"id":"name","type":"SensorAgent","measurementType":{"type":"string","value":"numeric","metadata":{}},"modifiedTime":{"type":"string","value":"2020-12-24T14:19:38.265Z","metadata":{}},"readings":{"type":"array","value":[{"type":"SensorReading","value":{"reading":{"type":"number","value":1.99}}}],"metadata":{}},"sanID":{"type":"string","value":"SANdevice2","metadata":{}},"sensorID":{"type":"string","value":"device2","metadata":{}},"sensorManufacturer":{"type":"string","value":"Esthesis_Demo","metadata":{}},"sensorType":{"type":"string","value":"_SENSOR","metadata":{}},"units":{"type":"string","value":"number","metadata":{}}};
+        dataPoint.id = flowFile.getAttribute('esthesis.hardwareId');
+        dataPoint.type = "SensorAgent";//"EsthesisSensorAgent";
+        dataPoint.measurementType.value = jsonEntry.measurementType.value;
+        dataPoint.modifiedTime.value = jsonEntry.modifiedTime.value;
+        dataPoint.readings.value[0].value.reading.value = jsonEntry.readings.value[0].value.reading.value;
+        dataPoint.sanID.value = jsonEntry.sanID.value;
+        dataPoint.sensorID.value = jsonEntry.sensorID.value;
+        dataPoint.sensorManufacturer.value = jsonEntry.sensorManufacturer.value;
+        dataPoint.sensorType.value = jsonEntry.sensorType.value;
+        dataPoint.units.value = jsonEntry.units.value;               
+        // Push record.
+        dataPoints.push(dataPoint);
+    }));
+    // Replace FlowFile's content with the data in Orion line protocol.
+    flowFile = session.write(flowFile, new OutputStreamCallback(function (outputStream) {
+    outputStream.write(JSON.stringify(dataPoints[0]).getBytes(StandardCharsets.UTF_8));
+    }));
+    session.transfer(flowFile, REL_SUCCESS);
+}
+                    </value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>ExecuteScriptm</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.script.ExecuteScript</type>
+                </processors>
+                <processors>
+                    <id>d0f79df1-6a2d-30ad-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1760.0</x>
+                        <y>-120.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>HTTP Method</key>
+<value>
+    <name>HTTP Method</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Remote URL</key>
+<value>
+    <name>Remote URL</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>SSL Context Service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>
+    <name>Connection Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Read Timeout</key>
+<value>
+    <name>Read Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Include Date Header</key>
+<value>
+    <name>Include Date Header</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Follow Redirects</key>
+<value>
+    <name>Follow Redirects</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Send</key>
+<value>
+    <name>Attributes to Send</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Username</key>
+<value>
+    <name>Basic Authentication Username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Password</key>
+<value>
+    <name>Basic Authentication Password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+    <name>proxy-configuration-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+<value>
+    <name>Proxy Host</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+<value>
+    <name>Proxy Port</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Type</key>
+<value>
+    <name>Proxy Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-user</key>
+<value>
+    <name>invokehttp-proxy-user</name>
+</value>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-password</key>
+<value>
+    <name>invokehttp-proxy-password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Put Response Body In Attribute</key>
+<value>
+    <name>Put Response Body In Attribute</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Max Length To Put In Attribute</key>
+<value>
+    <name>Max Length To Put In Attribute</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Digest Authentication</key>
+<value>
+    <name>Digest Authentication</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Always Output Response</key>
+<value>
+    <name>Always Output Response</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Add Response Headers to Request</key>
+<value>
+    <name>Add Response Headers to Request</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Content-Type</key>
+<value>
+    <name>Content-Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>send-message-body</key>
+<value>
+    <name>send-message-body</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Use Chunked Encoding</key>
+<value>
+    <name>Use Chunked Encoding</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Penalize on "No Retry"</key>
+<value>
+    <name>Penalize on "No Retry"</name>
+</value>
+                            </entry>
+                            <entry>
+<key>use-etag</key>
+<value>
+    <name>use-etag</name>
+</value>
+                            </entry>
+                            <entry>
+<key>etag-max-cache-size</key>
+<value>
+    <name>etag-max-cache-size</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>HTTP Method</key>
+<value>GET</value>
+                            </entry>
+                            <entry>
+<key>Remote URL</key>
+<value>${contextBrokerUrl}/v2/entities/${esthesis.hardwareId}_Reply/attrs</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>5 secs</value>
+                            </entry>
+                            <entry>
+<key>Read Timeout</key>
+<value>15 secs</value>
+                            </entry>
+                            <entry>
+<key>Include Date Header</key>
+<value>True</value>
+                            </entry>
+                            <entry>
+<key>Follow Redirects</key>
+<value>True</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Send</key>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Username</key>
+                            </entry>
+                            <entry>
+<key>Basic Authentication Password</key>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+                            </entry>
+                            <entry>
+<key>Proxy Type</key>
+<value>http</value>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-user</key>
+                            </entry>
+                            <entry>
+<key>invokehttp-proxy-password</key>
+                            </entry>
+                            <entry>
+<key>Put Response Body In Attribute</key>
+                            </entry>
+                            <entry>
+<key>Max Length To Put In Attribute</key>
+<value>256</value>
+                            </entry>
+                            <entry>
+<key>Digest Authentication</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Always Output Response</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Add Response Headers to Request</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Content-Type</key>
+<value>${mime.type}</value>
+                            </entry>
+                            <entry>
+<key>send-message-body</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Use Chunked Encoding</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Penalize on "No Retry"</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>use-etag</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>etag-max-cache-size</key>
+<value>10MB</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>InvokeHTTP-GET-Reply</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>No Retry</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Original</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Response</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>Retry</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.InvokeHTTP</type>
+                </processors>
+                <processors>
+                    <id>df7713ad-3995-33ee-0000-000000000000</id>
+                    <parentGroupId>6206e8c9-366f-3b56-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1344.0</x>
+                        <y>-360.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-update-attribute-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Delete Attributes Expression</key>
+<value>
+    <name>Delete Attributes Expression</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>
+    <name>Store State</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+<value>
+    <name>Stateful Variables Initial Value</name>
+</value>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>
+    <name>canonical-value-lookup-cache-size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>contextBrokerUrl</key>
+<value>
+    <name>contextBrokerUrl</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Delete Attributes Expression</key>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>Do not store state</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>100</value>
+                            </entry>
+                            <entry>
+<key>contextBrokerUrl</key>
+<value>http://172.18.0.16:1026</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>UpdateAttributeTelemUrl</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+                </processors>
+            </contents>
+            <name>Opil [O]</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>03/24/2021 06:08:28 UTC</timestamp>
+</template>

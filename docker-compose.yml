@@ -1,0 +1,148 @@
+version: "3"
+
+networks:
+  esthesis-prod:
+
+volumes:
+  esthesis-db-storage:
+  esthesis-influxdb-storage:
+  esthesis-nifi-storage:
+  esthesis-platform-backend-server:
+
+services:
+  esthesis-db:
+    image: mysql:8.0.16
+    hostname: esthesis-db
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password --max_allowed_packet=1024000000
+    expose:
+      - 3306
+    volumes:
+      - "esthesis-db-storage:/var/lib/mysql"
+    environment:
+      - MYSQL_DATABASE
+      - MYSQL_ROOT_PASSWORD
+      - MYSQL_USER
+      - MYSQL_PASSWORD
+    deploy:
+      resources:
+        limits:
+          memory: "1G"
+    healthcheck:
+      test: mysqladmin ping -h 127.0.0.1 -u $$MYSQL_USER --password=$$MYSQL_PASSWORD
+      start_period: 10m
+    networks:
+      - esthesis-prod
+
+  esthesis-mqtt:
+    image: eclipse-mosquitto:1.6.12
+    hostname: esthesis-mqtt
+    restart: unless-stopped
+    ports:
+      - "${PORT_MQTT}:1883"
+      - "${PORT_MQTT_SECURE}:8883"
+    deploy:
+      resources:
+        limits:
+          memory: "512M"
+    healthcheck:
+      test: nc -vz localhost 1883 || nc -vz localhost 8883
+      start_period: 10m
+    networks:
+      - esthesis-prod
+
+  esthesis-influxdb:
+    image: influxdb:1.7.8
+    hostname: esthesis-influxdb
+    restart: unless-stopped
+    expose:
+      - 8086
+    environment:
+      - INFLUXDB_DB
+      - INFLUXDB_ADMIN_USER
+      - INFLUXDB_ADMIN_PASSWORD
+    deploy:
+      resources:
+        limits:
+          memory: "2G"
+    volumes:
+      - "esthesis-influxdb-storage:/var/lib/influxdb"
+    healthcheck:
+      test: curl -sI 127.0.0.1:8086/ping | grep -q "204 No Content"
+      start_period: 10m
+    networks:
+      - esthesis-prod
+
+  esthesis-nifi:
+    image: esthesis/esthesis-docker-nifi:1.10.0-2
+    hostname: esthesis-nifi
+    restart: unless-stopped
+    expose:
+      - "${NIFI_WEB_UI}"
+    ports:
+      - "${NIFI_WEB_PRODUCER_PORT}:20000"
+    deploy:
+      resources:
+        limits:
+          memory: "2G"
+    healthcheck:
+      test: curl -sI http://esthesis-nifi:8080/nifi | grep -q "HTTP/1.1 302 Found"
+      start_period: 10m
+    networks:
+      - esthesis-prod
+
+  esthesis-platform-proxy:
+    image: esthesis/esthesis-platform-proxy
+    hostname: esthesis-platform-proxy
+    restart: unless-stopped
+    ports:
+      - "${PORT_ESTHESIS_PROXY}:80"
+    deploy:
+      resources:
+        limits:
+          memory: "256M"
+    healthcheck:
+      test: curl -sI http://127.0.0.1 | grep -q "HTTP/1.1 200 OK"
+      start_period: 10m
+    networks:
+      - esthesis-prod
+
+  esthesis-platform-backend-server:
+    image: esthesis/esthesis-platform-backend-server
+    hostname: esthesis-platform-backend-server
+    restart: unless-stopped
+    ports:
+      - "${PORT_ESTHESIS_BACKEND}:46000"
+    environment:
+      spring_datasource_url: "jdbc:mysql://esthesis-db:3306/esthesis?autoReconnect=true&createDatabaseIfNotExist=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&allowPublicKeyRetrieval=true"
+      spring_datasource_username: "${MYSQL_USER}"
+      spring_datasource_password: "${MYSQL_PASSWORD}"
+    volumes:
+      - "esthesis-platform-backend-server:/home/users/esthesis/.esthesis"
+      - "./configure:/home/users/esthesis/esthesis-config"
+    command: [/home/users/esthesis/esthesis-config/autoconfigure_esthesis.sh]
+    deploy:
+      resources:
+        limits:
+          memory: "1G"
+    healthcheck:
+      test: curl -sI http://127.0.0.1:46000/api/ping | grep -q "HTTP/1.1 200"
+      start_period: 10m
+    networks:
+      - esthesis-prod
+
+  esthesis-platform-frontend-server:
+    image: esthesis/esthesis-platform-frontend-server
+    hostname: esthesis-platform-frontend-server
+    restart: unless-stopped
+    ports:
+      - "${PORT_ESTHESIS_UI}:80"
+    deploy:
+      resources:
+        limits:
+          memory: "256M"
+    healthcheck:
+      test: curl -sI http://127.0.0.1 | grep -q "HTTP/1.1 200"
+      start_period: 10m
+    networks:
+      - esthesis-prod
