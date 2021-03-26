@@ -1,4 +1,3 @@
-# TrySmart
 # **S**ensor **A**gent **N**ode - SAN
 - **S**ensor **A**gent **N**ode - SAN
 
