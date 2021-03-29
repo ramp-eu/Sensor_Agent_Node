@@ -2,16 +2,18 @@
 - **S**ensor **A**gent **N**ode - SAN
 
   - [Background](#background)
-  - [Components Description](#Components_Description)
-    - [Black box of SAN](#Black_box_of_SAN)
+  - [Overview of the Architecture](#Overview-of-the-Architecture)
+    - [Black box of SAN](#black-box-of-SAN)
+    - [Detailed Architecture of SAN](#Detailed-Architecture-of-San)
+    - [Large Project Deployment](#large-project-deployment)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
+    - [Backend Component Installation](#Backend-Component-Installation)
+    - [Device Agent Component Installation](#Device-Agent-Component-Installation)
   - [Configuration](#configuration)
-    - [Step1](#step1)
-    - [Step2](#step2)
   - [Interfaces](#interfaces)
-    - [I1](#I1)
-    - [I1](#I1)
+    - [Subscription to Orion Context Broker](#Subscription-to-Orion-Context-Broker)
+    - [Send Commands](#Send-Commands)
   - [License](#license)
  ## Background
 [OPIL](https://opil-documentation.readthedocs.io/) is the Open Platform for Innovations in Logistcs. This platform is meant to enable the development of value added services for the logistics sector in small-scale Industry 4.0 contexts such as those of manufacturing SMEs. In fact, it provides an easy deployable suite of applications for rapid development of complete logistics solutions, including components for task scheduling, path planning, automatic factory layout generation and navigation.
@@ -30,23 +32,147 @@ The **SAN** is located between OPIL and the sensor software and it is a extensio
 
 
 
-## Components_Description
+## Overview of the Architecture
 
-```python
 
-```
-### Black_box_of_SAN
+### Black box of SAN
 
-![Black Box of SAN](images/black%20box.PNG)
+![Black Box of SAN](images/black_box.PNG)
+
+At the above picture we can see 2 components :
+
+- The Device Agent Component
+  - Responsible for retrieving data, send commands to I/O devives, updates
+
+
+- The Backend Component
+  - Responsible for  monitoring  gateway health, retrieving data, sending commands
+  - Do all these functionalities directly from Orion context Broker
+### Detailed Architecture of SAN
+At the picture below we can see the SAN architecture in more detail. We can also see that the system supports gateways with driver codes for the sensors/actuators at any programming language.For the communication of the drivers with the Device Agent a Mqtt client is needed.
+
+The ***Device Agent*** consists of **a)** the IoT Device Agent core **b)** an Mqtt Client **c)** an embedded Mqtt Broker
+
+The ***Backend Component*** consists of **a)** an Mqtt Broker **b)** the Backend Server **c)** a Custom Fiware Adapter
+
+![detailed_architecture](images/detailed_architecture.PNG)
+### Large Project Deployment
+Below there is a large project deployment demontration.A Backend Component can support multiple Device Agent components.The Device Agent Component can be deployed to any host machine that supports java language, eg single board computers like  rpi, revpi or any other.
+ 
+![Large Project Deployment](images/large_project_deployment.PNG)
+
 
 ## Prerequisites
-
+Any device that supports Docker engine 
 ## Install
 
+### Backend Component Installation
+
+Backend Component can be installed with the following Command:
+docker-compose up
+
+### Device Agent Component Installation
+Execute the following command:
+
+ docker run --name esthesis-demo-device-rpi --network=esthesis_esthesis-prod -d  \
+-e hardwareId=mydevice1 \
+-e storageRoot="/app" \
+-e tags=myfiwaredevice \
+-e registrationUrl="http://my-esthesis-host" \
+esthesis/esthesis-platform-device:latest
+
+Enviromental variables(hardwareId,tags,registrationUrl) can be adjusted at any use case.
 ## Configuration
+
+The configurations take place at .env file at config folder
 
 ## Interfaces
 
+### Subscription to Orion Context Broker
+```json
+{
+"description": "Updating CMD",
+"subject": {
+"entities": [
+{
+"idPattern": ".*",
+"type": "EsthesisDeviceCommand"
+}
+],
+"condition": {
+"attrs": []
+}
+},
+"notification": {
+"attrs": [],
+"onlyChangedAttrs": false,
+"attrsFormat": "normalized",
+"http": {
+"url": "http://*********:20101"
+}
+}
+}
+```
+
+The subscription to Orion Context Broker is done automatically with the installation. At ********* the internal ip of Nifi must be filled.
+### Send Commands
+```json
+{
+    "id": "testdev1_cmd",
+    "type": "EsthesisDeviceCommand",
+    "measurementType": {
+      "type": "string",
+      "value": "string",
+      "metadata": {}
+    },
+    "modifiedTime": {
+      "type": "string",
+      "value": "2021-03-10T18:08:31.399Z",
+      "metadata": {}
+    },
+    "readings": {
+      "type": "array",
+      "value": [
+        {
+          "type": "SensorReading",
+          "value": {
+            "reading": {
+              "type": "string",
+              "value": "*****************"
+            }
+          }
+        }
+      ],
+      "metadata": {}
+    },
+    "sanID": {
+      "type": "string",
+      "value": "Esthesis_SAN_testdev1",
+      "metadata": {}
+    },
+    "sensorID": {
+      "type": "string",
+      "value": "health",
+      "metadata": {}
+    },
+    "sensorManufacturer": {
+      "type": "string",
+      "value": "Esthesis",
+      "metadata": {}
+    },
+    "sensorType": {
+      "type": "string",
+      "value": "DeviceCommand",
+      "metadata": {}
+    },
+    "units": {
+      "type": "string",
+      "value": "string",
+      "metadata": {}
+    }
+  }
+``` 
+In order to send a command a http put request with id"testdev1_cmd" needs to be done. In "*****************" the command takes place. 
 ## License
 
 [APACHE2](LICENSE) ©
