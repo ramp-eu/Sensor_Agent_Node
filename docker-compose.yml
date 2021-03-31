@@ -76,10 +76,9 @@ services:
   esthesis-nifi:
     image: esthesis/esthesis-docker-nifi:1.10.0-2
     hostname: esthesis-nifi
-    restart: unless-stopped
-    expose:
-      - "${NIFI_WEB_UI}"
+    restart: unless-stopped     
     ports:
+      - "${NIFI_WEB_UI}:8080"
       - "${NIFI_WEB_PRODUCER_PORT}:20000"
     deploy:
       resources:
@@ -108,7 +107,7 @@ services:
       - esthesis-prod
 
   esthesis-platform-backend-server:
-    image: esthesis/esthesis-platform-backend-server
+    build: backend-server/
     hostname: esthesis-platform-backend-server
     restart: unless-stopped
     ports:
@@ -119,8 +118,6 @@ services:
       spring_datasource_password: "${MYSQL_PASSWORD}"
     volumes:
       - "esthesis-platform-backend-server:/home/users/esthesis/.esthesis"
-      - "./configure:/home/users/esthesis/esthesis-config"
-    command: [/home/users/esthesis/esthesis-config/autoconfigure_esthesis.sh]
     deploy:
       resources:
         limits:
